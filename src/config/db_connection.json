@@ -1,0 +1,8 @@
+{
+    "postgres_local":
+        {
+        "host": "localhost", 
+        "port": 5000,
+        "db": "neostudy"
+        }
+}
