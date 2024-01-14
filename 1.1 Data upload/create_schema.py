@@ -10,7 +10,7 @@ from src.utils.constants import *
 def main():
     etl_conn = Database('admin').create_connection()
 
-    sql = open(get_project_root_dir() + '\\1. Data upload\\sql_scripts\\create_schema.sql', mode='r', encoding='utf-8-sig').read()
+    sql = open(get_project_root_dir() + '\\1.1 Data upload\\sql_scripts\\create_schema.sql', mode='r', encoding='utf-8-sig').read()
 
     etl_conn.cursor().execute(sql)
     etl_conn.commit()
